@@ -16,9 +16,10 @@ Bit::Vector       7.1
 Date::Calc        6.0
 Date::Calc::Util  1.0
 Date::Pcalc       6.0
-Data::Locations   5.4
+Data::Locations   5.5
 Math::MatrixBool  5.8
 Set::IntRange     5.2
+Bundle::libwin32
 Bundle::CPAN
 CPAN::Reporter
 Bundle::libnet
@@ -39,7 +40,7 @@ MIME::Lite
 
 VERSION
 
-This man page documents "Bundle::STBEY::Favourites" version 1.0.
+This man page documents "Bundle::STBEY::Favourites" version 1.1.
 
 AUTHOR
 

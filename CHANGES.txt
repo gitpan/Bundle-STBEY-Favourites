@@ -1,5 +1,5 @@
              ===================================================
-               Package "Bundle::STBEY::Favourites" Version 1.0
+               Package "Bundle::STBEY::Favourites" Version 1.1
              ===================================================
 
 
@@ -9,6 +9,10 @@
 
 Version history:
 ----------------
+
+Version 1.1   08.10.2009
+
+ +  Added Bundle::libwin32
 
 Version 1.0   07.10.2009
 

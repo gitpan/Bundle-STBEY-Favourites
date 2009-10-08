@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Bundle-STBEY-Favourites
-version:             1.0
+version:             1.1
 abstract:            ~
 license:             ~
 author:              ~
@@ -10,10 +10,11 @@ requires:
     Bit::Vector:                   7.1
     Bundle::CPAN:                  0
     Bundle::libnet:                0
+    Bundle::libwin32:              0
     Bundle::LWP:                   0
     Carp::Clan:                    5.3
     CPAN::Reporter:                0
-    Data::Locations:               5.4
+    Data::Locations:               5.5
     Date::Calc:                    6
     Date::Calc::Util:              1
     Date::Pcalc:                   6
