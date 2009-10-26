@@ -1,5 +1,5 @@
              ===================================================
-               Package "Bundle::STBEY::Favourites" Version 1.1
+               Package "Bundle::STBEY::Favourites" Version 1.2
              ===================================================
 
 
@@ -9,6 +9,11 @@
 
 Version history:
 ----------------
+
+Version 1.2   17.10.2009
+
+ +  Updated all version numbers which have changed,
+    added some more modules and dependencies
 
 Version 1.1   08.10.2009
 

@@ -25,15 +25,15 @@ unless ($@)
 {print "ok $n\n";} else {print "not ok $n\n";}
 $n++;
 
-if ($Bundle::STBEY::Favourites::VERSION eq "1.1")
+if ($Bundle::STBEY::Favourites::VERSION eq "1.2")
 {print "ok $n\n";} else {print "not ok $n\n";}
 $n++;
 
-if (Bundle::STBEY::Favourites::Version() eq "1.1")
+if (Bundle::STBEY::Favourites::Version() eq "1.2")
 {print "ok $n\n";} else {print "not ok $n\n";}
 $n++;
 
-if (Bundle::STBEY::Favourites->Version() eq "1.1")
+if (Bundle::STBEY::Favourites->Version() eq "1.2")
 {print "ok $n\n";} else {print "not ok $n\n";}
 $n++;
 

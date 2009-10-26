@@ -19,16 +19,23 @@ use Config;
 WriteMakefile(
     'NAME'              => 'Bundle::STBEY::Favourites',
     'VERSION_FROM'      => 'lib/Bundle/STBEY/Favourites.pm',
+    'ABSTRACT_FROM'     => 'lib/Bundle/STBEY/Favourites.pm',
+    'AUTHOR'            => 'Steffen Beyer <STBEY@cpan.org>',
+    'LICENSE'           => 'perl',
     'PREREQ_PM'         =>
                               {
-                                  'Carp::Clan'        => 5.3,
+                                  'YAML'              => 0.70,
+                                  'Carp::Clan'        => 6.04,
+                                  'Storable'          => 2.21,
                                   'Bit::Vector'       => 7.1,
-                                  'Date::Calc'        => 6.0,
+                                  'Date::Calc'        => 6.2,
+                                  'Date::Calc::XS'    => 6.2,
                                   'Date::Calc::Util'  => 1.0,
-                                  'Date::Pcalc'       => 6.0,
                                   'Data::Locations'   => 5.5,
                                   'Math::MatrixBool'  => 5.8,
                                   'Set::IntRange'     => 5.2,
+                                  'Scalar::Util'      => 0,
+                                  'V'                 => 0,
                                   'Bundle::libwin32'  => 0,
                                   'Bundle::CPAN'      => 0,
                                   'CPAN::Reporter'    => 0,
@@ -44,17 +51,14 @@ WriteMakefile(
                                   'MIME::Base64'      => 0,
                                   'MIME::Tools'       => 0,
                                   'Time::HiRes'       => 0,
-                                  'Storable'          => 0,
                                   'HTML::Parser'      => 0,
                                   'MIME::Lite'        => 0
 
                               },
-#   ($] >= 5.005 ?
-#       ('ABSTRACT'     => 'Bundle of my favourite modules',
-#        'AUTHOR'       => 'Steffen Beyer <STBEY@cpan.org>') : ()),
-#   ($] >= 5.005 && $^O eq 'MSWin32' && $Config{archname} =~ /-object\b/i ?
-#       ('CAPI'         => 'TRUE') : ()),
-    'dist'              => { COMPRESS => "gzip -9", SUFFIX => "gz" }
+    'dist'              => { COMPRESS => "gzip -9", SUFFIX => "gz" },
+#   for ActivePerl:
+    ($] >= 5.005 && $^O eq 'MSWin32' && $Config::Config{'archname'} =~ /-object\b/i ?
+        ('CAPI'         => 'TRUE') : ())
 );
 
 __END__

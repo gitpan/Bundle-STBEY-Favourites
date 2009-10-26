@@ -26,7 +26,7 @@ require DynaLoader;
 
 %EXPORT_TAGS = (all => [@EXPORT_OK]);
 
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 sub Version { return $VERSION; }
 
@@ -48,14 +48,18 @@ when this module is installed with "CPAN" or "CPANPLUS":
 
 =head1 CONTENTS
 
-Carp::Clan        5.3
+YAML              0.70
+Carp::Clan        6.04
+Storable          2.21
 Bit::Vector       7.1
-Date::Calc        6.0
+Date::Calc        6.2
+Date::Calc::XS    6.2
 Date::Calc::Util  1.0
-Date::Pcalc       6.0
 Data::Locations   5.5
 Math::MatrixBool  5.8
 Set::IntRange     5.2
+Scalar::Util
+V
 Bundle::libwin32
 Bundle::CPAN
 CPAN::Reporter
@@ -71,13 +75,12 @@ Getopt::Long
 MIME::Base64
 MIME::Tools
 Time::HiRes
-Storable
 HTML::Parser
 MIME::Lite
 
 =head1 VERSION
 
-This man page documents "Bundle::STBEY::Favourites" version 1.1.
+This man page documents "Bundle::STBEY::Favourites" version 1.2.
 
 =head1 AUTHOR
 
